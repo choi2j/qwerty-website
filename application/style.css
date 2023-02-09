@@ -1,0 +1,48 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+.page {
+	background-color: #222;
+	width: 100vw;
+	height: 100vh;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: grid;
+	place-items: center;
+}
+
+.link {
+	font-family: "Inter";
+	font-size: 2rem;
+	font-weight: bold;
+	color: #dadfee;
+	text-decoration: none;
+	position: relative;
+}
+.link span,
+.link i {
+	position: relative;
+}
+.link i {
+	margin-left: 0.5em;
+}
+.link .pink {
+	width: 2em;
+	height: 2em;
+	border-radius: 2em;
+	background-color: #4e5668;
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	left: -0.65em;
+}
