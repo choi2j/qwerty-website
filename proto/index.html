@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QWERTY</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+	</head>
+	<body>
+		<div class="page page1">
+			<p class="logo">QWERTY</p>
+			<p class="des">선린 웹 일반 동아리</p>
+		</div>
+
+		<div class="page page2">
+			<div class="card-list">
+				<div class="card card1 card-focus">
+					<div class="card-c">
+						<p class="card-title">WEB 기초</p>
+						<p class="card-content">기본적인 HTML CSS JS 를 다룹니다.</p>
+						<a href="">view</a>
+					</div>
+				</div>
+				<div class="card card2 card-next">
+					<div class="card-c">
+						<p class="card-title">JS 심화</p>
+						<p class="card-content">JS 심화과정으로, JS 를 이용한 동적 UI 를 만듭니다.</p>
+						<a href="">view</a>
+					</div>
+				</div>
+				<div class="card card3 card-none">
+					<div class="card-c">
+						<p class="card-title">Vue.js</p>
+						<p class="card-content">대중적인 웹 프레임워크 Vue.js 를 다룹니다.</p>
+						<a href="">view</a>
+					</div>
+				</div>
+				<div class="card card4 card-none">
+					<div class="card-c">
+						<p class="card-title">WEB Design</p>
+						<p class="card-content">간단한 웹 디자인에 대해서 다룹니다.</p>
+						<a href="">view</a>
+					</div>
+				</div>
+				<div class="card card5 card-prev">
+					<div class="card-c">
+						<p class="card-title">Team Project</p>
+						<p class="card-content">선배와 후배들이 팀을 이뤄서 하나의 완성된 프로젝트를 만듦니다.</p>
+						<a href="">view</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="buttons">
+				<button onclick="cardleft()">LEFT</button>
+				<button onclick="cardright()">RIGHT</button>
+			</div>
+		</div>
+
+		<div class="page page3">
+			<div class="card-list-2">
+				<div class="card-2">
+					<div class="card-c">
+						<p class="card-title-2">project1</p>
+						<p class="card-content-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto velit, asperiores quo laborum voluptate deserunt eveniet!</p>
+						<a>view</a>
+					</div>
+				</div>
+				<div class="card-2">
+					<div class="card-c">
+						<p class="card-title-2">project1</p>
+						<p class="card-content-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto velit, asperiores quo laborum voluptate deserunt eveniet!</p>
+						<a>view</a>
+					</div>
+				</div>
+				<div class="card-2">
+					<div class="card-c">
+						<p class="card-title-2">project1</p>
+						<p class="card-content-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto velit, asperiores quo laborum voluptate deserunt eveniet!</p>
+						<a>view</a>
+					</div>
+				</div>
+				<div class="card-2">
+					<div class="card-c">
+						<p class="card-title-2">project1</p>
+						<p class="card-content-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto velit, asperiores quo laborum voluptate deserunt eveniet!</p>
+						<a>view</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page page4">
+			<a class="link" href="" target="_blank">
+				<div class="pink"></div>
+				<span>지원 폼으로</span>
+				<i class="fa-solid fa-arrow-right"></i>
+			</a>
+		</div>
+
+		<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+		<script src="main.js"></script>
+		<script>
+			window.sr = ScrollReveal({ reset: true });
+
+			sr.reveal(".page1", {
+				origin: "top",
+				duration: 500,
+				distance: "200px",
+			});
+
+			sr.reveal(".page2", {
+				origin: "left",
+				duration: 500,
+				distance: "200px",
+			});
+
+			sr.reveal(".page3", {
+				origin: "right",
+				duration: 500,
+				distance: "200px",
+			});
+
+			sr.reveal(".page4", {
+				origin: "bottom",
+				duration: 500,
+				distance: "200px",
+			});
+		</script>
+	</body>
+</html>

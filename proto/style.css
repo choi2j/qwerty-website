@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Montserrat;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: #4e5668;
+	color: #dadfee;
+}
+
+button,
+a {
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.page {
+	height: 100vh;
+	width: 100vw;
+}
+
+/* page 1 */
+.page1 {
+	background: #4e5668;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.logo {
+	font-size: 10rem;
+	font-weight: 700;
+}
+
+/* page 2 */
+.page2 {
+	background: #4e5668;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.buttons {
+	display: flex;
+}
+.buttons button {
+	position: relative;
+	top: 35vh;
+	margin: 1rem;
+	padding: 1rem 3rem;
+	background: #ddd;
+}
+
+.card-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 15rem;
+	width: 10rem;
+	background: #ffffff80;
+	margin: 1rem;
+}
+.card .card-content,
+.card a {
+	display: none;
+}
+.card-focus {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+	width: 40vh;
+}
+.card-focus .card-content,
+.card-focus a {
+	display: block;
+}
+.card-focus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -30vh 0 0 -20vh;
+	animation-duration: 3s;
+}
+.card-prev {
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 40vh);
+	margin: -15vh 0 0 -10vh;
+	animation-duration: 3s;
+}
+.card-next {
+	position: absolute;
+	top: 50%;
+	left: calc(50% + 40vh);
+	margin: -15vh 0 0 -10vh;
+	animation-duration: 3s;
+}
+.card-none {
+	display: none;
+	animation-duration: 3s;
+}
+.card {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card1 {
+	background-image: url("./img/html.png");
+}
+.card2 {
+	background-image: url("./img/js.png");
+}
+.card3 {
+	background-image: url("./img/vuejs.png");
+}
+.card4 {
+	background-image: url("./img/design.jpg");
+}
+.card5 {
+	background-image: url("./img/team.jpg");
+}
+
+.card-c {
+	height: 100%;
+	width: 100%;
+	backdrop-filter: blur(5px) brightness(60%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.card-focus .card-c {
+	height: 100%;
+	width: 100%;
+}
+
+.card-c p,
+.card-c a {
+	margin: 1rem;
+}
+
+.card-title {
+	font-size: 2rem;
+	font-weight: 700;
+}
+.card-content {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+.card-c a {
+	padding: 0.5rem 1rem;
+	color: #fff;
+	border: #fff 1px solid;
+	transition: background-color 0.25s, color ease-in-out 0.25s;
+}
+.card-c a:hover {
+	background: #fff;
+	color: #00000080;
+}
+
+/* page 3 */
+.page3 {
+	background: #4e5668;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.card-list-2 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 30rem;
+	width: 20rem;
+	margin: 1rem;
+	background: #00000080;
+}
+
+.card-c .card-title-2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.card-c .card-content-2 {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.card-c .card-content-2,
+.card-c a {
+	transition: opacity 0.25s ease-in-out;
+	opacity: 0%;
+}
+
+.card-c:hover > .card-content,
+.card-c:hover > .card-content-2,
+.card-c:hover > a {
+	opacity: 100%;
+}
+
+/* page 4 */
+.page4 {
+	background: #4e5668;
+	padding: 0 20px;
+	margin: 0 auto;
+	display: grid;
+	place-items: center;
+}
+
+.link {
+	font-family: "Inter";
+	font-size: 2rem;
+	font-weight: bold;
+	color: #4e5668;
+	text-decoration: none;
+	position: relative;
+}
+.link span,
+.link i {
+	position: relative;
+}
+.link i {
+	margin-left: 0.5em;
+}
+.link .pink {
+	width: 2em;
+	height: 2em;
+	border-radius: 2em;
+	background-color: #dadfee;
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	left: -0.65em;
+}

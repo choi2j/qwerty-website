@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900);
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	background: #dadfee;
+	color: #222;
+}
+
+.App {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+
+.page {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-align: start;
+}
+
+.mont {
+	font-family: Montserrat;
+}
+
+.noto {
+	font-family: Noto Sans KR;
+}
+
+.accent {
+	color: #4e5668;
+}
+
+.big {
+	font-size: 2rem;
+}
+
+.mid {
+	font-size: 1.3rem;
+}
+
+.sml {
+	font-size: 1rem;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.page1 {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-img {
+	height: 10rem;
+	border-radius: 4px;
+}
+
+.logo {
+	font-size: 10rem;
+	font-weight: 700;
+}
+
+.logo-des {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.page2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	text-align: center;
+}
+
+.keyboard {
+	display: flex;
+	gap: 1rem;
+}
+
+.key {
+	font-family: Montserrat;
+	font-size: 1.5rem;
+	color: #4e5668;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: #4e5668 1px solid;
+	border-radius: 4px;
+	height: 3rem;
+	width: 3rem;
+	box-shadow: #4e5668 4px 4px 0;
+	cursor: pointer;
+	transition: box-shadow ease-in-out 0.2s;
+}
+.key:hover {
+	box-shadow: none;
+}
+.key-pressed {
+	box-shadow: none;
+}
+
+.page3 {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.curriculum {
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.cur {
+	padding: 0.5rem 1rem;
+	height: 8rem;
+	width: 40%;
+	border-radius: 4px;
+	border: #4e5668 1px solid;
+	box-shadow: #4e5668 4px 4px 0;
+	transition: box-shadow ease-in-out 0.2s;
+}
+.cur:hover {
+	box-shadow: none;
+}
+.cur p {
+	margin-bottom: 0.5rem;
+}
+
+.page4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.port {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	padding: 1rem;
+	gap: 1rem;
+	justify-content: flex-start;
+	background: linear-gradient(#00000000, #000);
+}
+.port-img {
+	height: 30rem;
+	width: 20rem;
+	background-position: center;
+	background-size: cover;
+	border-radius: 4px;
+	border: #4e5668 1px solid;
+	box-shadow: #4e5668 4px 4px 0;
+}
+.port1 {
+	background-image: url("./img/html.png");
+}
+.port2 {
+	background-image: url("./img/menu.png");
+}
+.port3 {
+	background-image: url("./img/postit.png");
+}
+.port4 {
+	background-image: url("./img/wearherapi.png");
+}
+.port-title {
+	color: #dadfee;
+}
+.port-content {
+	color: #dadfee;
+	opacity: 0%;
+	transition: opacity ease-in-out 0.2s;
+}
+.port-link {
+	color: #dadfee;
+	border: #dadfee 1px solid;
+	padding: 0.5rem 1rem;
+	width: fit-content;
+	opacity: 0%;
+	transition: opacity ease-in-out 0.2s, color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+}
+.port:hover > .port-content,
+.port:hover > .port-link {
+	opacity: 100%;
+}
+.port-link:hover {
+	background-color: #dadfee;
+	color: #000;
+}
+
+.page5 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.application {
+	color: #4e5668;
+	border-radius: 4px;
+	border: #4e5668 1px solid;
+	padding: 0.5rem 5rem;
+	box-shadow: #4e5668 4px 4px 0;
+	transition: box-shadow ease-in-out 0.2s;
+}
+.application:hover {
+	box-shadow: none;
+}
