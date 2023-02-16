@@ -135,6 +135,8 @@ body {
 }
 
 .cur {
+	display: flex;
+	flex-direction: column;
 	padding: 0.5rem 1rem;
 	height: 8rem;
 	width: 40%;
@@ -142,6 +144,7 @@ body {
 	border: #4e5668 1px solid;
 	box-shadow: #4e5668 4px 4px 0;
 	transition: box-shadow ease-in-out 0.2s;
+	word-break: keep-all;
 }
 .cur:hover {
 	box-shadow: none;
@@ -265,6 +268,9 @@ body {
 	.page2 {
 		gap: 2rem;
 	}
+	.page3 {
+		gap: 1rem;
+	}
 	.page4 .port-img {
 		height: 20rem;
 		width: 15rem;
@@ -286,6 +292,40 @@ body {
 	}
 	.page2 {
 		gap: 2rem;
+	}
+	.page3 {
+		gap: 0.8rem;
+	}
+	.cur {
+		height: 10rem;
+	}
+	.page4 .port-img {
+		height: 15rem;
+		width: 10rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo {
+		font-size: 2rem;
+	}
+	.big {
+		font-size: 1.3rem;
+	}
+	.mid {
+		font-size: 1rem;
+	}
+	.sml {
+		font-size: 0.6rem;
+	}
+	.page2 {
+		gap: 2rem;
+	}
+	.page3 {
+		gap: 0.5rem;
+	}
+	.cur {
+		height: 10rem;
 	}
 	.page4 .port-img {
 		height: 15rem;
